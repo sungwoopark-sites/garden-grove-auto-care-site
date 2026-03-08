@@ -34,7 +34,7 @@
     :root {
       --primary: #022950; --primary-dark: #011830; --accent: #BB2222;
       --white: #ffffff; --light-gray: #f5f5f5; --text: #333333;
-      --gray: #827F7F; --border: #e0e0e0;
+      --gray: #666666; --border: #e0e0e0;
       --shadow: 0 4px 20px rgba(2,41,80,0.12);
       --transition: 0.3s ease; --radius: 6px; --max-width: 1200px;
     }
@@ -65,6 +65,7 @@
     @media (max-width: 900px) {
       .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
       .hero-ctas, .hero-trust { justify-content: center; }
+      .hero-visual { max-width: 500px; margin: 0 auto; width: 100%; }
     }
     @media (max-width: 768px) {
       .nav-toggle { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
@@ -123,7 +124,7 @@
 <!-- HEADER -->
 <header class="site-header" role="banner">
   <nav class="nav-inner" aria-label="Main navigation">
-    <a href="#home" class="nav-logo" aria-label="Garden Grove Auto Care home">
+    <a href="#home" class="nav-logo">
       <img src="assets/images/logo.webp" alt="Garden Grove Auto Care logo" width="96" height="25">
       <span class="nav-logo-text">
         <span class="brand-name">Garden Grove Auto Care</span>
