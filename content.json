@@ -1,0 +1,53 @@
+{
+  "business": {
+    "name": "Garden Grove Auto Care",
+    "tagline": "Trust Us for All Your Vehicle Needs",
+    "phone": "(714) 539-5101",
+    "address": "13089 Century Boulevard, Garden Grove, CA 92843",
+    "hours": {
+      "monday_friday": "8:00 AM - 5:00 PM",
+      "saturday": "8:00 AM - 3:30 PM",
+      "sunday": "Closed"
+    },
+    "url": "https://garden-grove-auto-care-site.vercel.app"
+  },
+  "services": [
+    { "name": "Alignment", "icon": "assets/images/svc-alignment.webp" },
+    { "name": "Brakes", "icon": "assets/images/svc-brakes.webp" },
+    { "name": "Electrical Services", "icon": "assets/images/svc-electrical.webp" },
+    { "name": "Engine & Transmission", "icon": "assets/images/svc-engine.webp" },
+    { "name": "General Maintenance", "icon": "assets/images/svc-general.webp" },
+    { "name": "Import Vehicle Repair", "icon": "assets/images/svc-import.webp" },
+    { "name": "Tire Services", "icon": "assets/images/svc-tires.webp" },
+    { "name": "Undercar Services", "icon": "assets/images/svc-undercar.webp" }
+  ],
+  "about": {
+    "description": "Garden Grove Auto Care handles both domestic and import automobiles with quick turnaround times, transparent pricing with written estimates, and certified mechanics. Many repairs are completed same-day.",
+    "guarantees": [
+      "Same-day completion for many repairs",
+      "Written estimates & transparent pricing",
+      "Certified mechanics",
+      "Work guaranteed"
+    ]
+  },
+  "testimonials": [
+    { "text": "Excellent service.", "author": "Karla L." },
+    { "text": "Harvey and crew are the best!!!", "author": "Cindy W." }
+  ],
+  "partners": [
+    { "name": "ACDelco", "logo": "assets/images/partner-acdelco.webp" },
+    { "name": "IDENTIFIX", "logo": "assets/images/partner-identifix.webp" },
+    { "name": "Jasper Engines", "logo": "assets/images/partner-jasper.webp" },
+    { "name": "Motorcraft", "logo": "assets/images/partner-motorcraft.webp" },
+    { "name": "Denso", "logo": "assets/images/partner-denso.webp" }
+  ],
+  "payment_methods": ["American Express", "Visa", "Mastercard", "Discover", "Debit/ATM", "Cash"],
+  "colors": {
+    "primary": "#022950",
+    "accent": "#BB2222",
+    "gray": "#827F7F"
+  },
+  "social": {
+    "facebook": "GardenGroveRadiatorAirConditioningAutoRepair"
+  }
+}
