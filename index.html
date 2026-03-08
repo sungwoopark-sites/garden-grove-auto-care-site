@@ -71,6 +71,16 @@
       .nav-toggle span { display: block; width: 26px; height: 2px; background: #fff; border-radius: 2px; }
       .nav-links { position: fixed; top: 70px; left: 0; right: 0; bottom: 0; background: var(--primary-dark); flex-direction: column; justify-content: center; gap: 2.5rem; transform: translateX(100%); transition: transform 0.35s ease; z-index: 999; }
     }
+    /* hero-visual — in critical CSS to prevent CLS when async style.css loads */
+    .hero-visual { position: relative; display: flex; flex-direction: column; gap: 1rem; }
+    .hero-shop-img { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+    .hero-shop-img img { width: 100%; height: 200px; object-fit: cover; }
+    .hero-hours-card { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem 1.5rem; color: #fff; }
+    /* animate-on-scroll initial state — prevent CLS when animations.css loads async */
+    .animate-on-scroll { opacity: 0; transform: translateY(25px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .animate-on-scroll.in-view { opacity: 1; transform: translateY(0); }
+    /* hero accent — lighter red for WCAG AA contrast on dark navy background */
+    .hero-title .accent { color: #ff7a7a; }
   </style>
 
   <!-- JSON-LD Structured Data -->
@@ -135,6 +145,7 @@
   </nav>
 </header>
 
+<main>
 <!-- HERO -->
 <section class="hero" id="home" aria-label="Hero">
   <div class="hero-tire-accent" aria-hidden="true"></div>
@@ -169,7 +180,7 @@
         <img src="assets/images/shop.webp" alt="Garden Grove Auto Care shop exterior" width="332" height="215" loading="eager">
       </div>
       <div class="hero-hours-card">
-        <h3>Hours of Operation</h3>
+        <h2>Hours of Operation</h2>
         <div class="hours-row">
           <span class="day">Mon – Fri</span>
           <span class="time">8:00 AM – 5:00 PM</span>
@@ -327,21 +338,21 @@
       <h2 class="section-title" id="partners-title">Trusted Brands &amp; Affiliations</h2>
     </div>
     <div class="partners-strip">
-      <a href="#" class="partner-logo animate-on-scroll animate-delay-1" aria-label="ACDelco partner">
+      <div class="partner-logo animate-on-scroll animate-delay-1">
         <img src="assets/images/partner-acdelco.webp" alt="ACDelco" width="135" height="70" loading="lazy">
-      </a>
-      <a href="#" class="partner-logo animate-on-scroll animate-delay-2" aria-label="IDENTIFIX partner">
+      </div>
+      <div class="partner-logo animate-on-scroll animate-delay-2">
         <img src="assets/images/partner-identifix.webp" alt="IDENTIFIX" width="135" height="70" loading="lazy">
-      </a>
-      <a href="#" class="partner-logo animate-on-scroll animate-delay-3" aria-label="Jasper Engines partner">
+      </div>
+      <div class="partner-logo animate-on-scroll animate-delay-3">
         <img src="assets/images/partner-jasper.webp" alt="Jasper Engines" width="135" height="70" loading="lazy">
-      </a>
-      <a href="#" class="partner-logo animate-on-scroll animate-delay-4" aria-label="Motorcraft partner">
+      </div>
+      <div class="partner-logo animate-on-scroll animate-delay-4">
         <img src="assets/images/partner-motorcraft.webp" alt="Motorcraft" width="135" height="70" loading="lazy">
-      </a>
-      <a href="#" class="partner-logo animate-on-scroll animate-delay-5" aria-label="Denso partner">
+      </div>
+      <div class="partner-logo animate-on-scroll animate-delay-5">
         <img src="assets/images/partner-denso.webp" alt="Denso" width="135" height="70" loading="lazy">
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -467,6 +478,8 @@
     </div>
   </div>
 </div>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="site-footer" role="contentinfo">

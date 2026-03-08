@@ -305,7 +305,7 @@ ul {
 }
 
 .hero-title .accent {
-  color: var(--accent);
+  color: #ff7a7a; /* lighter red — WCAG AA contrast on dark navy */
   display: block;
 }
 
@@ -412,12 +412,12 @@ ul {
   color: var(--white);
 }
 
-.hero-hours-card h3 {
+.hero-hours-card h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #ff9999; /* lighter red — WCAG AA contrast on dark card/navy */
   margin-bottom: 0.75rem;
   font-weight: 700;
 }
