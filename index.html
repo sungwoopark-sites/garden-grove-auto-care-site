@@ -82,6 +82,11 @@
     .animate-on-scroll.in-view { opacity: 1; transform: translateY(0); }
     /* hero accent — lighter red for WCAG AA contrast on dark navy background */
     .hero-title .accent { color: #ff7a7a; }
+    /* hero sub-elements — layout-critical props to prevent CLS when style.css loads async */
+    .hero-badge { display: inline-flex; padding: 0.4rem 1rem; margin-bottom: 1.5rem; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .btn-primary, .btn-outline { display: inline-flex; padding: 0.9rem 2rem; }
+    .hero-trust { display: flex; gap: 1.5rem; flex-wrap: wrap; }
   </style>
 
   <!-- JSON-LD Structured Data -->
